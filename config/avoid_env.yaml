@@ -17,6 +17,7 @@ behaviors:
       extrinsic:
         gamma: 0.99
         strength: 1.0
-    max_steps: 500000
+    max_steps: 50000          # 总训练步数改小，方便快速测试
     time_horizon: 128
-    summary_freq: 10000
+    summary_freq: 100         # 每100步写一次日志到 TensorBoard
+    checkpoint_interval: 5000 # 每5000步保存一次模型
