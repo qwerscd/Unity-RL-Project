@@ -1,3 +1,27 @@
+Project: AvoidAgent (Solo Project)
+
+Description:
+This project implements a 3D reinforcement learning environment where an agent learns to avoid obstacles using the PPO algorithm. The agent is controlled by a custom RayAgentController script and perceives its surroundings with Ray Perception Sensors.
+
+Features:
+	•	Agent: Ray-based obstacle avoidance
+	•	Environment: Simple 3D scene with obstacles
+	•	Algorithm: Proximal Policy Optimization (PPO)
+	•	Training: Python interface with ML-Agents 0.30.0
+	•	Model: ONNX file (AvoidAgent.onnx) for inference without Python
+	•	Hyperparameters: Configured via YAML file (config/avoid_env.yaml)
+	•	Observations: Agent velocity, relative position, raycasts
+	•	Actions: Continuous movement in X, Z directions and jump
+	•	Rewards: Small survival reward per step; penalty for collisions
+
+Instructions:
+	1.	Open Unity project.
+	2.	Place AvoidAgent.onnx in the Agent’s Behavior > Model field.
+	3.	Set Behavior Type to Default.
+	4.	Enter Play Mode to see the trained agent perform in the environment.
+	5.	Optionally, use TensorBoard to monitor training (tensorboard --logdir=results).
+
+
 AvoidAgent Unity ML-Agents Project
 
 Project Overview
