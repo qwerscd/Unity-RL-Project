@@ -127,6 +127,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 5e4137f1971c24a91941069d3308a540, type: 3}
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_BehaviorType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5457583147619992391, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
       propertyPath: m_Name
       value: Environment (2)
@@ -174,8 +186,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5670725265473777372, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 398978842}
   m_SourcePrefab: {fileID: 100100000, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+--- !u!1 &398978833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5670725265473777372, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+  m_PrefabInstance: {fileID: 389420248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &398978842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398978833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.ML-Agents::Unity.MLAgents.DecisionRequester
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1001 &430214265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -184,10 +218,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 301060318565511487, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_EndVerticalOffset
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 95a4a348eae984f358de706f501bc2f7, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 5e4137f1971c24a91941069d3308a540, type: 3}
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_BehaviorType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5457583147619992391, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
       propertyPath: m_Name
       value: Environment (3)
@@ -235,7 +281,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5670725265473777372, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1960680433}
   m_SourcePrefab: {fileID: 100100000, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
 --- !u!1 &757077801
 GameObject:
@@ -363,7 +412,7 @@ GameObject:
   - component: {fileID: 820659369}
   m_Layer: 0
   m_Name: WallTop
-  m_TagString: Wall
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,7 +523,7 @@ GameObject:
   - component: {fileID: 879807216}
   m_Layer: 0
   m_Name: WallLeft
-  m_TagString: Wall
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -583,7 +632,7 @@ GameObject:
   - component: {fileID: 1076397763}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -885,7 +934,7 @@ GameObject:
   - component: {fileID: 1569160546}
   m_Layer: 0
   m_Name: WallRight
-  m_TagString: Wall
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -997,7 +1046,7 @@ GameObject:
   - component: {fileID: 1738529485}
   m_Layer: 0
   m_Name: WallBottom
-  m_TagString: Wall
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1095,6 +1144,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738529483}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1918851765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5670725265473777372, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+  m_PrefabInstance: {fileID: 2049446209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1918851774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918851765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.ML-Agents::Unity.MLAgents.DecisionRequester
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
+--- !u!1 &1960680424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5670725265473777372, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+  m_PrefabInstance: {fileID: 430214265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1960680433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960680424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.ML-Agents::Unity.MLAgents.DecisionRequester
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1001 &2049446209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1103,6 +1190,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2178893095774957526, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_Constraints
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 5e4137f1971c24a91941069d3308a540, type: 3}
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_BehaviorType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5457583147619992391, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
       propertyPath: m_Name
       value: Environment (1)
@@ -1150,8 +1253,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5670725265473777372, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1918851774}
   m_SourcePrefab: {fileID: 100100000, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+--- !u!1 &2052217070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5670725265473777372, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+  m_PrefabInstance: {fileID: 2110921285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2052217079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052217070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.ML-Agents::Unity.MLAgents.DecisionRequester
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1001 &2110921285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1160,6 +1285,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 5e4137f1971c24a91941069d3308a540, type: 3}
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_BehaviorType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692176854828339841, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5457583147619992391, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
       propertyPath: m_Name
       value: Environment
@@ -1207,7 +1344,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5670725265473777372, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2052217079}
   m_SourcePrefab: {fileID: 100100000, guid: 252e827e4f4954bdd8a60688a4c3827d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

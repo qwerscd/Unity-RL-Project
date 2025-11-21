@@ -2,22 +2,22 @@
     "AvoidAgent": {
         "checkpoints": [
             {
-                "steps": 0,
-                "file_path": "results/run1/AvoidAgent/AvoidAgent-0.onnx",
-                "reward": null,
-                "creation_time": 1763607068.339545,
+                "steps": 104799,
+                "file_path": "results/run1/AvoidAgent/AvoidAgent-104799.onnx",
+                "reward": -0.7873103392535242,
+                "creation_time": 1763724546.1795058,
                 "auxillary_file_paths": [
-                    "results/run1/AvoidAgent/AvoidAgent-0.pt"
+                    "results/run1/AvoidAgent/AvoidAgent-104799.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 0,
+            "steps": 104799,
             "file_path": "results/run1/AvoidAgent.onnx",
-            "reward": null,
-            "creation_time": 1763607068.339545,
+            "reward": -0.7873103392535242,
+            "creation_time": 1763724546.1795058,
             "auxillary_file_paths": [
-                "results/run1/AvoidAgent/AvoidAgent-0.pt"
+                "results/run1/AvoidAgent/AvoidAgent-104799.pt"
             ]
         }
     },

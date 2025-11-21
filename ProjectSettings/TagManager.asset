@@ -7,11 +7,12 @@ TagManager:
   - Wall
   - Agent
   - Obstacle
+  - Walls
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ObstacleLayer
   - Water
   - UI
   - 

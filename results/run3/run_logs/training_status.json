@@ -1,0 +1,65 @@
+{
+    "AvoidAgent": {
+        "checkpoints": [
+            {
+                "steps": 26891,
+                "file_path": "results/run3/AvoidAgent/AvoidAgent-26891.onnx",
+                "reward": -0.8052076740404822,
+                "creation_time": 1763723756.0736651,
+                "auxillary_file_paths": [
+                    "results/run3/AvoidAgent/AvoidAgent-26891.pt"
+                ]
+            },
+            {
+                "steps": 27896,
+                "file_path": "results/run3/AvoidAgent/AvoidAgent-27896.onnx",
+                "reward": -0.8045352408539356,
+                "creation_time": 1763723757.2315001,
+                "auxillary_file_paths": [
+                    "results/run3/AvoidAgent/AvoidAgent-27896.pt"
+                ]
+            },
+            {
+                "steps": 28953,
+                "file_path": "results/run3/AvoidAgent/AvoidAgent-28953.onnx",
+                "reward": -0.7039403204074122,
+                "creation_time": 1763723763.350562,
+                "auxillary_file_paths": [
+                    "results/run3/AvoidAgent/AvoidAgent-28953.pt"
+                ]
+            },
+            {
+                "steps": 29950,
+                "file_path": "results/run3/AvoidAgent/AvoidAgent-29950.onnx",
+                "reward": -0.7036666578078365,
+                "creation_time": 1763723764.354818,
+                "auxillary_file_paths": [
+                    "results/run3/AvoidAgent/AvoidAgent-29950.pt"
+                ]
+            },
+            {
+                "steps": 30763,
+                "file_path": "results/run3/AvoidAgent/AvoidAgent-30763.onnx",
+                "reward": -0.7071360064192294,
+                "creation_time": 1763723909.805996,
+                "auxillary_file_paths": [
+                    "results/run3/AvoidAgent/AvoidAgent-30763.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 30763,
+            "file_path": "results/run3/AvoidAgent.onnx",
+            "reward": -0.7071360064192294,
+            "creation_time": 1763723909.805996,
+            "auxillary_file_paths": [
+                "results/run3/AvoidAgent/AvoidAgent-30763.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0"
+    }
+}
