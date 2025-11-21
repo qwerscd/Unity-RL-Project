@@ -1,0 +1,38 @@
+{
+    "AvoidAgent": {
+        "checkpoints": [
+            {
+                "steps": 499945,
+                "file_path": "results/run4/AvoidAgent/AvoidAgent-499945.onnx",
+                "reward": null,
+                "creation_time": 1763737329.5708642,
+                "auxillary_file_paths": [
+                    "results/run4/AvoidAgent/AvoidAgent-499945.pt"
+                ]
+            },
+            {
+                "steps": 681385,
+                "file_path": "results/run4/AvoidAgent/AvoidAgent-681385.onnx",
+                "reward": null,
+                "creation_time": 1763737554.880246,
+                "auxillary_file_paths": [
+                    "results/run4/AvoidAgent/AvoidAgent-681385.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 681385,
+            "file_path": "results/run4/AvoidAgent.onnx",
+            "reward": null,
+            "creation_time": 1763737554.880246,
+            "auxillary_file_paths": [
+                "results/run4/AvoidAgent/AvoidAgent-681385.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0"
+    }
+}
